@@ -19,4 +19,4 @@ RUN chmod +x /entrypoint.sh
 EXPOSE 8080
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["tracd", "-s", "-p", "8080", "--basic-auth='project,/usr/local/.htpasswd,Trac auth'", "/usr/local/project"]
+CMD ["tracd", "-s", "-p", "8080", "--basic-auth='project,/usr/local/project/.htpasswd,Trac auth'", "/usr/local/project"]
