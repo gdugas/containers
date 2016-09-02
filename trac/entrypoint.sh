@@ -2,7 +2,7 @@
 
 set -e
 
-if [ ! -d project ]; then
+if [ ! -f project/conf/trac.ini ]; then
     if [ "$TRAC_PROJECT_NAME" == "" ]; then
         TRAC_PROJECT_NAME="Template Project"
     fi
